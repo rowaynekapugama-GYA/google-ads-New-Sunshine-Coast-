@@ -113,14 +113,43 @@ Build the two Google Ads conversion actions in GTM off `generate_lead` and
 
 ---
 
-## 5. What is on the page, and why
+## 5. Section order
+
+Both pages run the same sequence, so a visitor who clicks either ad gets the
+same argument in the same order:
+
+1. **Hero** (video) + credential bar
+2. **Your surgeons** — the two profiles, immediately after the banner
+3. **What a specialist brings** — the differentiator, with no comparison
+   against other practitioners
+4. **The practice and the hospitals** — purpose-built rooms, interior gallery,
+   the six locations
+5. **Paying for treatment** — payment plans, early release of super (implants
+   page only), health fund rebates
+6. **Treatment information** — what the procedure actually involves, with the
+   clinical imagery
+7. **Step by step** — four stages, each with an icon
+8. **FAQ**
+9. **Enquiry form**
+10. **Footer** with the embedded Google map and a Get directions link
+
+## 6. What is on the page, and why
 
 - **The hero is a video**, the same Vimeo background loop as the main site
   (`1226478707`), with a navy scrim for text legibility and a still fallback
   behind it so the hero is never blank.
+- **The surgeons come first**, directly after the banner, because the specialist
+  credential is the whole reason to choose this practice over a general dental
+  clinic. Paid traffic sees the qualification before the sales argument.
 - **The form sits low on the page**, after the proof, the explainers and the
   surgeons. The CTAs above it are a call button and an enquiry button that
   scrolls down to the form.
+- **Clinical renders display in full**, never cropped. The `.split-media.plain`
+  containers use `object-fit: contain` on a white card so nothing is cut off
+  or stretched. Photography still uses `cover`, which is correct for it.
+- **The step-by-step sections use icons**, not numbered circles, and the
+  overview cards use icons rather than photographs where a photo would have
+  misrepresented the treatment.
 - **Specialist positioning throughout**, built on what the surgeons actually
   hold: medical and dental degrees, FRACDS (OMS), on-site CBCT, five accredited
   private hospitals. No comparisons against other practitioners anywhere.
@@ -137,7 +166,7 @@ Build the two Google Ads conversion actions in GTM off `generate_lead` and
 
 ---
 
-## 6. Optimisations to do at launch
+## 7. Optimisations to do at launch
 
 - **Self-host the practice photography.** The surgeon portraits and interior
   shots currently load from `sunshinecoastofis.com.au/images/`. Copying those
