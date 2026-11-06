@@ -1,0 +1,9 @@
+{
+  "name": "scofis-landing-pages",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Google Ads landing pages for Sunshine Coast Oral, Facial & Implant Specialists",
+  "dependencies": {
+    "nodemailer": "6.9.14"
+  }
+}
